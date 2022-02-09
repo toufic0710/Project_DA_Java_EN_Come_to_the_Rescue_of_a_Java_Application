@@ -3,6 +3,14 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.Map;
 
+/*Main file which imports everything.
+*
+*
+*
+* entry : filepath
+*@returns nothing (output file created)
+*/
+
 public class Main {
 	public static void main(String args[]) throws Exception {
 		
