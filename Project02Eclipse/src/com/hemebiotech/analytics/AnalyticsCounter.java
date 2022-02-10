@@ -20,7 +20,7 @@ public class AnalyticsCounter {
 	
 	public void write (Map<String, Integer> sorted, String filepath) {
 		
-		ISymptomWriter Writer = new WriteSymptomDataFromMap(sorted);
+		ISymptomWriter Writer = new WriteSymptomDataFromMap(sorted, filepath);
 		Writer.WriteSymptoms();
 	}
 

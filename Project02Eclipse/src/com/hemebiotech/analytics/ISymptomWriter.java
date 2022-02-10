@@ -9,7 +9,7 @@ package com.hemebiotech.analytics;
 
 public interface ISymptomWriter {
 	/**
-	 * Take a map in entry and write a document output.txt
+	 * Import WriteSymptoms function
 	 * 
 	 * @return nothing
 	 */
