@@ -28,13 +28,22 @@ public class SortSymptomDataFromList implements ISymptomSorter {
 		if (symptoms != null) {
 			try {
                 for(String symptom : symptoms){ 
-                    if (result.containsKey(symptom)){
+                	Integer i = result.putIfAbsent(symptom, 1);
+                	if (i!= null) {
+                		result.put(symptom, i+1);
+                	}
+                	//result.merge(symptom, 1, (v1,v2)->v1+1);
+                	
+                    /*if (result.containsKey(symptom)){
                         int v = result.get(symptom);
                         result.put(symptom, v+1);  
                     }
                     else{
                         result.put(symptom, 1);
-                    }
+                    }*/
+                    
+                	
+                	
 
         
                 }
